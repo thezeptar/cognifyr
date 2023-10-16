@@ -1,0 +1,66 @@
+{
+    "$schema": "https://json.schemastore.org/package.json",
+    "name": "cognifyr",
+    "version": "2.7.0",
+    "description": "A library to supercharge your Node.js projects with AI",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts",
+    "directories": {
+        "lib": "dist",
+        "test": "test"
+    },
+    "scripts": {
+        "start": "npm test",
+        "test": "ts-node src/index.ts",
+        "build": "[ -d 'dist' ] && rm -r dist || true && tsc",
+        "fix": "eslint --fix .",
+        "lint": "eslint ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Cognifyr/cognifyr.git"
+    },
+    "keywords": [
+        "cognifyr",
+        "ai",
+        "tools",
+        "nodejs",
+        "javascript",
+        "typescript"
+    ],
+    "author": {
+        "name": "Zeptar",
+        "email": "thezeptar@gmail.com",
+        "url": "https://zeptar.js.cool"
+    },
+    "license": "Apache-2.0",
+    "files": [
+        "dist/",
+        "README.md",
+        "LICENSE",
+        "package.json",
+        "package-lock.json",
+        "CODE_OF_CONDUCT.md",
+        "SECURITY.md",
+        "CONTRIBUTING.md"
+    ],
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "bugs": {
+        "url": "https://github.com/Cognifyr/cognifyr/issues"
+    },
+    "homepage": "https://github.com/Cognifyr/cognifyr#readme",
+    "devDependencies": {
+        "@types/pngjs": "^6.0.2",
+        "@typescript-eslint/eslint-plugin": "^6.6.0",
+        "@typescript-eslint/parser": "^6.6.0",
+        "eslint": "^8.50.0",
+        "standard-version": "^9.5.0",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.2.2"
+    },
+    "dependencies": {
+        "pngjs": "^7.0.0"
+    }
+}
